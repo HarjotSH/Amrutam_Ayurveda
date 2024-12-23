@@ -1,0 +1,36 @@
+.welcome-text{
+  font-family: "Nexa Light";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.main-heading {
+  font-family: "DINPro-Bold";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.main-heading span {
+  text-decoration: underline;
+}
+
+.sub-heading {
+  font-family: "Nexa Light";
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+}
+
+.cta-button{
+  /* font-family: "DIN Medium"; */
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18.77px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
