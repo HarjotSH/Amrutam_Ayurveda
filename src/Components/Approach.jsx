@@ -30,15 +30,17 @@ const AyurvedicApproach = () => {
 
   return (
     <div className="py-12 px-6 lg:px-20">
-      <h2 className="inline-block text-center text-3xl lg:text-4xl font-bold text-customgreen border-s-emerald-200 border-b-4 mb-4">
-        Our Ayurvedic Approach
-      </h2>
-      <p className="text-center text-gray-600 text-sm lg:text-base mb-8 max-w-3xl mx-auto">
-        At Amrutam we follow a unique and personalized approach to healing. Our
-        expert <br /> practitioners begin each treatment process by conducting a
-        thorough analysis of the <br /> patient’s body type, medical history,
-        and current health conditions.
-      </p>
+      <div className="flex flex-col items-center"> {/* Added flex container for centering */}
+        <h2 className="text-3xl lg:text-4xl font-bold text-customgreen border-b-4 border-s-emerald-200 mb-4">
+          Our Ayurvedic Approach
+        </h2>
+        <p className="text-center text-gray-600 text-sm lg:text-base mb-8 max-w-3xl">
+          At Amrutam we follow a unique and personalized approach to healing. Our
+          expert <br /> practitioners begin each treatment process by conducting a
+          thorough analysis of the <br /> patient’s body type, medical history,
+          and current health conditions.
+        </p>
+      </div>
       <div className="flex flex-wrap justify-center gap-10">
         {steps.map((step, index) => (
           <div

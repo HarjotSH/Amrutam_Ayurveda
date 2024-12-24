@@ -44,7 +44,7 @@ const CustomerStories = () => {
 
   return (
     <div className="bg-yellow-50 py-10">
-      <h2 className=" inline-block text-customgreen text-2xl font-semibold border-b-4 border-s-emerald-200 text-center mb-8">
+      <h2 className="inline-block text-customgreen text-2xl font-semibold border-b-4 border-s-emerald-200 text-center mb-8">
         Stories from our valued customers!
       </h2>
       <div className="flex justify-center gap-6 flex-wrap">
