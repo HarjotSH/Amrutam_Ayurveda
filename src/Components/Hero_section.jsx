@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "../Images/Hero.jpg";
+import Hero_res from "../Images/hero_res.jpg"; // New image for Android
 import logo from "../Images/logo.png";
 import FeatureCardExample from "./FeatureCards/FeatureCard_example";
 
@@ -14,9 +15,7 @@ const HeroSection = ({
       <div
         className="hero-section relative w-full min-h-screen text-white bg-cover bg-center"
         style={{
-          backgroundImage: `
-            linear-gradient(90deg, rgba(18, 18, 18, 0.9) 30%, rgba(149, 29, 28, 0.8) 60%, rgba(255, 255, 255, 0) 80%),
-            url(${Hero})`,
+          backgroundImage: `linear-gradient(90deg, rgba(18, 18, 18, 0.9) 30%, rgba(149, 29, 28, 0.8) 60%, rgba(255, 255, 255, 0) 80%), url(${Hero})`,
           backgroundColor: "#951D1C", // Fallback color
           backgroundSize: "contain", // Covers the entire container
           backgroundPosition: "right 2% top", // Positions the image towards the right
@@ -35,7 +34,7 @@ const HeroSection = ({
             src={logo}
             alt="Amrutam logo"
             style={{
-              height: "70px",
+              height: "35px",
               width: "150px",
               marginLeft: "20px",
             }}
@@ -47,7 +46,7 @@ const HeroSection = ({
           <h3
             className="text-yellow-50 text-lg mb-4 font-light"
             style={{
-              fontWeight: "400",
+              fontWeight: "300",
               fontSize: "28px",
               lineHeight: "28px",
             }}
@@ -71,6 +70,15 @@ const HeroSection = ({
       </div>
 
       <FeatureCardExample />
+      
+      {/* Media query to swap the image for Android devices */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .hero-section {
+            background-image: url(${Hero_res}); /* Set HeroAndroid image for smaller screens */
+          }
+        }
+      `}</style>
     </>
   );
 };

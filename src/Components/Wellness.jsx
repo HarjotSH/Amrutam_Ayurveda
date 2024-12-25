@@ -44,7 +44,7 @@ const WellnessSection = () => {
 
   return (
     <div className="w-full bg-white py-16 px-4 sm:px-8 text-center">
-      <h2 className="inline-block text-4xl font-bold text-customgreen mb-4 border-b-4 border-s-emerald-200">
+      <h2 className="inline-block text-4xl font-bold text-customgreen mb-4 border-b-8 border-s-emerald-200">
         Discover Ayurveda’s Magic With Us
       </h2>
       <p

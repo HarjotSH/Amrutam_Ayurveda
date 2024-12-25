@@ -2,7 +2,6 @@ import React from 'react';
 
 const InformationSection = () => {
   const sectionStyle = {
-    
     backgroundColor: '#dfe6e1', // Background color similar to the image
     padding: '20px 40px',
     fontFamily: 'Arial, sans-serif',
@@ -11,9 +10,9 @@ const InformationSection = () => {
   };
 
   const contentStyle = {
-    margin:"50px 0 80px 0",
+    margin: '50px auto 80px auto', // Centered horizontally and vertically
     textAlign: 'left',
-    width: '300px', // Ensure the content is properly constrained
+    maxWidth: '300px', // Ensures the content is properly constrained
   };
 
   const headingStyle = {
